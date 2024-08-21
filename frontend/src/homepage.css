@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    background: url('https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-755506954.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    padding: 0 1rem;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 200;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    background-color: blue;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 80px;
+}
+
+.content-item {
+    width: 30%;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-image {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    border-radius: 8%;
+    border: solid lightblue 1px;
+    box-shadow: #333 5px 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.overlay-button {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.overlay-button:hover {
+    background-color: blue;
+}
+
+/* Footer styling */
+.footer {
+    background-color: lightcyan;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* Ensure no conflicts with other elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        height: 60px;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .content-item {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}

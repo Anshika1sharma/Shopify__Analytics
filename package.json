@@ -1,0 +1,19 @@
+{
+  "name": "shopify_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@syncfusion/ej2-base": "^26.2.10",
+    "@syncfusion/ej2-react-charts": "^26.2.10",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  }
+}
